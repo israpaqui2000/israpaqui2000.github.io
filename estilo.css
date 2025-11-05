@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+.cabezera {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(148, 148, 148);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    position:relative;
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.barra a {
+    display: inline-block;
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    
+}
+
+.barra a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 27px;
+    
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background: url('imagenes/fondo4.jpg') ;
+    
+    background-position: center;
+   
+    align-items: center;
+    padding: 70px 10% 0;    
+}
+
+.contenido-home {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+  padding: 0 10%;
+}
+
+.texto { 
+  flex: 1; 
+  padding-right: 40px; 
+  color: black;
+}
+.texto h3 { 
+  font-size: 32px;
+  font-weight: 700;
+}
+.texto h1 { 
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+}
+
+
+.iconos a {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 40px; 
+  height: 40px;
+  background: rgb(187, 186, 186);
+  border:  2px solid rgb(8, 8, 8);
+  border-radius: 20%;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+
+.iconos a:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(134, 133, 133);
+    box-shadow: 0 0 20px rgb(102, 102, 102);
+    transform: translateY(-10px);
+}
+.BotonMi {
+    display: inline-block; 
+    padding:  12px 28px;
+    background: rgb(187, 186, 186);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.BotonMi:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(85, 83, 83);
+    box-shadow: 0 0 20px rgb(102, 102, 102);
+
+}
+
+.descripcion{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+.cvfoto {
+  padding-left: 70px; 
+}
+
+.cvfoto img{
+  padding-bottom: 20%;
+  max-width: 630px;
+  height: auto;
+  width: 100%;
+   margin-right: 40px;
+ 
+}
+  
+
+
+.texto h2{
+font-size: 60px;
+}
+
+.texto h2 span{
+color: blueviolet;
+}
+
+.texto h4{
+font-size: 29px;
+font-weight: 600;
+color: rgb(0, 0, 0);
+line-height: 1.7;
+margin: 15px 0 30px;
+}
+
+.texto p {
+  font-size: 20px;
+  line-height: 2;       
+  margin-bottom: 3rem;  
+}
+
+.texto br {
+  display: block;
+  margin-bottom: 1.5rem; 
+  content: "";
+}
+
+
+
+.foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-perfil {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  border:  2px solid rgb(8, 8, 8);
+  border-radius: 20%;
+}
+
+.serv{
+  background: url('imagenes/fondo4.jpg') ;
+  background-position: center;
+}
+
+#servicioslista{
+color: white;
+font-size: 20px;
+line-height: 1.4;
+margin-bottom: 4rem;
+}
+.subtitulo{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.subtitulo span{
+  color: rgb(115, 65, 161);
+}
+
+.contenido{
+  padding: 90px;
+}
+
+.servicioslista{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+gap: 40px;
+margin-top: 50px;
+}
+
+.servicioslista div{
+background-color: transparent;
+padding: 40px;
+font-size: 13px;
+font-weight: 10px;
+border-radius: 20px;
+transition: background 0.5s,transform 0.5s;
+box-shadow: 1px 1px 20px  rgb(102, 102, 102),
+          1px 1px 20px  rgb(0, 0, 0);
+}
+
+.servicioslista div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.servicioslista div h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.servicioslista p {
+    font-size: 25px;
+    
+}
+
+.servicioslista div a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;     
+    letter-spacing: 1px;
+    color: #000000;
+    text-decoration: none;
+    background: rgb(187, 186, 186);
+    border-radius: 10px;
+}
+
+.servicioslista a:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(85, 83, 83);
+    box-shadow: 0 0 20px rgb(102, 102, 102);
+
+}
+
+.servicioslista div:hover {
+  transform: translateY(-10px);
+
+}
+
+.section{
+  display:flex;
+  flex-wrap:  wrap;
+}
+
+
+.habilidad {
+  display: flex;
+  justify-content: center;   
+  align-items: flex-start;   
+  gap: 40px;                 
+  flex-wrap: wrap;           
+}
+
+.contenedor1,
+.contenedor2 {
+  flex: 1;                  
+  max-width: 600px;          
+  height: auto;              
+  margin: 0;                
+  padding: 40px;             
+  box-sizing: border-box;
+}
+
+
+.cabezera1 {
+  margin-bottom: 20px; 
+}
+
+.bar{
+  font-size :23px;
+}
+
+.barras .bar{
+  margin-top: 40px 0;
+}
+
+.barras .bar{
+  margin-top: 40px 0;
+}
+
+.barras .bar:first-child{
+  margin-top: 0;
+}
+
+.barras .bar:last-child{
+  margin-top:  0;
+}
+
+.barras .bar .info {
+  margin-bottom: 5px;
+}
+
+.barras .bar .info span {
+  font-size: 30px;
+  font-weight: 500;
+  
+}
+
+.barras .bar .linea-progreso {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 10px; 
+  background-color: #000000;
+}
+
+.barras .bar .linea-progreso span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.linea-progreso.html span {
+    width: 90%;
+    background: #e44d26; 
+}
+
+.linea-progreso.css span {
+    width: 60%;
+    background: #264de4; 
+}
+
+.linea-progreso.javascript span {
+    width: 85%;
+    background: #f0db4f; 
+}
+
+.linea-progreso.cpp span {
+    width: 50%;
+    background: #00599c; 
+}
+
+.linea-progreso.html span::after {
+  content: "90%";
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  font-size: 20px;
+  color: #000;
+}
+
+.linea-progreso.css span::after {
+  content: "60%";
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  font-size: 20px;
+  color: #000;
+}
+
+.linea-progreso.javascript span::after {
+  content: "85%";
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  font-size: 20px;
+  color: #000;
+}
+
+.linea-progreso.cpp span::after {
+  content: "50%";
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  font-size: 20px;
+  color: #000;
+}
+
+
+.progress-bar {
+  fill: none;
+  stroke: #0b0606;
+  stroke-width: 15;
+}
+
+.path {
+  fill: none;
+  stroke: #00eaff;
+  stroke-width: 15;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.path.path-1 {
+  stroke: #e44d26; 
+  stroke-dasharray: 502;
+  stroke-dashoffset: 150;
+}
+
+.path.path-2 {
+  stroke: #264de4;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 201; /
+}
+
+
+.path.path-3 {
+  stroke: #f0db4f; 
+  stroke-dasharray: 502;
+  stroke-dashoffset: 201;
+}
+
+.radial-bars {
+  position: relative;
+  width: 200px;   
+  height: 200px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.radial-bars svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg); 
+}
+
+.radial-bars .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.radial-bars .text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.contenedor2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+
+.ultim{
+  background: url('imagenes/fondo4.jpg') ;
+  background-position: center;
+}
+
+.textop {
+  padding-top: 60px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+.textop p {
+  font-size: 20px;
+  
+}
+.textop h2 {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+}
+
+
+.textop span {
+  color: violet;
+}
+
+.contenidop  {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(359px, auto));
+  gap: 40xp;
+  margin-top: 20px;
+}
+
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.row img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+
+}
+
+.capa {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgb(143, 143, 143),grey);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+
+
+}
+
+.capa h5 {
+  color: #000;
+  font-size: 50px;
+  line-height: 1.8;
+  
+}
+
+.capa i {
+  color: #bb0000;
+  margin-top: 20px;
+  font-size: 20px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+.row:hover img {
+ transform: scale(1.1);
+
+}
+
+
+.row:hover .capa {
+  height: 100%;
+
+}
+
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 60x;
+}
+
+.contactotex h2 {
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contactotex h2 span {
+    color: rgb(34, 0, 255);
+}
+
+.contactotex h4 {
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contactotex p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.listacontactos {
+  margin-bottom: 3rem;
+    
+}
+
+
+.listacontactos li {
+  margin-bottom: 10px;
+  display: block;
+    
+}
+
+
+
+.listacontactos li {
+    display: inline-block;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+
+
+
+.contactoiconos a {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 40px; 
+  height: 40px;
+  background: rgb(187, 186, 186);
+  border:  2px solid rgb(8, 8, 8);
+  border-radius: 20%;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+
+.contactoiconos a:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(85, 83, 83);
+  box-shadow: 0 0 20px rgb(102, 102, 102);
+  transform: translateY(-10px);
+}
